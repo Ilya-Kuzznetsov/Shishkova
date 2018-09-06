@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <title>Shishkova</title>
+        <link rel="stylesheet" href="css/normolize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <header class="container">
+            <ul class="flex">
+                <li class="item">
+                    <p>Shishkov/a</p>
+                </li>
+                <li class="item">
+                    <div class="wrapper">
+                        <input type="checkbox" id="check-menu">
+                        <label for="check-menu"></label>
+                        <div class="burger-line first"></div>
+                        <div class="burger-line second"></div>
+                        <div class="burger-line third"></div>
+                        <div class="burger-line fourth"></div>
+                        <nav class="main-menu">
+                            <a href="#what-we-do">Что мы делаем</a>
+                            <a href="#smm-for-brand">SMM для бренда</a>
+                            <a href="#price">Тарифы</a>
+                            <a href="#feedback">Отзывы</a>
+                        </nav>
+                    </div>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <section class="slider" id="slider">
+                <div class="container">
+                <h2><span class="purple">Заголовок</span> слайдера</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fuga provident. Libero magni quibusdam labore ad iste saepe hic, maxime qui ipsum tempore beatae, volu tomi ptates doloremque rerum aspernatur dolorum at!</p>
+                <form class="flex" method="get" action="http://echo.htmlacademy.ru">
+                    <p><span class="purple">Отправить</span> сообщение</p>
+                    <label class="visually-hidden" for="name">Имя</label>
+                    <input name="name" id="name" type="text" placeholder="Ваше Имя" pattern="[А-Яа-яЁё]{2,20}" required>
+                    <label class="visually-hidden" for="email">E-mail</label>
+                    <input name="email" id="email" type="email" placeholder="Ваш E-mail">
+                    <label class="visually-hidden" for="phone">Телефон</label>
+                    <input name="phone" id="phone" type="text" placeholder="Ваш телефон (89876543210)" pattern="8[0-9]{10}" required>
+                    <label class="visually-hidden" for="message">Сообщение</label>
+                    <textarea name="message" id="message" placeholder="Ваше сообщение"></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+                </div>
+            </section>
+            <section class="what-we-do container" id="what-we-do">
+                <h2><span class="purple">Что</span> мы делаем</h2>
+                <p>Основные направления, которые мы предлагаем в работе с нашими клиентами</p>
+                    <ul class="flex services">
+                        <li class="item">
+                            <h3>Создание визуальной части</h3>
+                            <p>Оригинальный<br> и уникальный контент</p>
+                        </li>
+                        <li class="item">
+                            <h3>Копирайтинг</h3>
+                            <p>Написание статей под Ваш зпрос</p>
+                        </li>
+                        <li class="item">
+                            <h3>Создание SMM стратегии</h3>
+                            <p>Расписаный план работы с Вашим ресурсом</p>
+                        </li>
+                        <li class="item">
+                            <h3>Таргетированная реклама</h3>
+                            <p>Настройка рекламы для продвижения контента</p>
+                        </li>
+                    </ul>
+            </section>
+            <section class="smm-for-brand container" id="smm-for-brand">
+                <h2><span class="purple">SMM</span> для бренда</h2>
+                <div class="flex smm-block">
+                    <div class="flex smm-category">
+                        <input class="visually-hidden" type="radio" id="radio-smm-1" name="toggle" checked>
+                        <input class="visually-hidden" type="radio" id="radio-smm-2" name="toggle">
+                        <input class="visually-hidden" type="radio" id="radio-smm-3" name="toggle">
+                        <input class="visually-hidden" type="radio" id="radio-smm-4" name="toggle">
+                        <div class="flex controls">
+                            <label class="item" for="radio-smm-1"></label>
+                            <label class="item" for="radio-smm-2"></label>
+                            <label class="item" for="radio-smm-3"></label>
+                            <label class="item" for="radio-smm-4"></label>
+                        </div>
+                    <div class="slider-list">
+                        <div class="smm-text first-text">
+                            <h3>Что такое SMM текст?</h3>
+                            <p>SMM это аббревиатура, с англ. переводится как социальный медиа маркетинг, соответственно текст который пишется в рамках SMM ориентирован на аудиторию соц. сетей, твиттеров, блогов, форумов и прочих социальных площадок. В моем случае это была соц. сеть Вконтакте. Но поскольку основная цель всех манипуляций — привлечь трафик из соц. сетей на сайт заказчика, то сам текст изначально копирайтерами пишется для сайта и потом из него лепят пост для ВК. Тут можно вспомнить еще одну заумную аббревиатуру — SMM.</p>
+                            <img src="img/apple.png" alt="apple watch">
+                        </div>
+                        <div class="smm-text second-text">
+                            <h3>Что писать?</h3>
+                            <p>Расскажите, зачем мы пишем посты в группу/на страницу? «Чтобы было»? Примеров масса, удачных нет. Для продаж? Вряд ли. SMM бренда – это почти всегда контент-маркетинг, а не прямые продажи. Для лояльности? Да, то, что нужно. Вспоминаем любителя фиолетовых коров Сэта Година и его доверительный маркетинг. Войдите в дом клиента, поселитесь у него, будьте с ним везде, где он откроет Facebook.</p>
+                            <img src="img/apple.png" alt="apple watch">
+                        </div>
+                        <div class="smm-text third-text">
+                            <h3>Кому писать?</h3>
+                            <p>Без изучения аудитории нет смысла писать пост. Будет ли кто-то читать? Козловым кранам и буровым станкам и без SMM-копирайтинга хорошо. В принципе все, что нужно – красивая страница компании в Facebook с парой пресс-релизов в месяц. Нет, можно туда что-то писать, но тем мало, так что есть риск скатиться в котиков.</p>
+                            <img src="img/apple.png" alt="apple watch">
+                        </div>
+                        <div class="smm-text fourth-text">
+                            <h3>Как писать?</h3>
+                            <p>А теперь – раскуривайте вашу писательскую трубку! Будем составлять пост по всем канонам копирайтинга – чтобы Шугерман лайкнул да Огилви репостнул. У текста есть 4 фактора успеха, записанные в формулу AIDA. «Внимание» – заголовок. «Интерес» – первый абзац. «Желание» – самая суть предложения. И «Действие» – призыв в конце. Все это есть в хорошем посте.</p>
+                            <img src="img/apple.png" alt="apple watch">
+                        </div>
+                        <a class="interesting" href="#slider">Мне это интересно</a>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section class="price container" id="price">
+                <h2><span class="purple">Стоимость</span> услуг</h2>
+                <div class="flex price-list">
+                    <div class="price-item price-item-1">
+                        <div class="price-first price-first-1">
+                            <p>Услуга 1</p>
+                            <p>Услуга 2</p>
+                            <p>Услуга 3</p>
+                            <p>Услуга 4</p>
+                            <p>Услуга 5</p>
+                        </div>
+                        <div class="prise-second price-second-1">
+                            <p>Критерий 1</p>
+                            <p>Критерий 2</p>
+                            <p>Критерий 3</p>
+                        </div>
+                    </div>
+                    <div class="price-item price-item-2">
+                        <div class="price-first price-first-2">
+                            <p>Услуга 1</p>
+                            <p>Услуга 2</p>
+                            <p>Услуга 3</p>
+                            <p>Услуга 4</p>
+                            <p>Услуга 5</p>
+                            <p>Услуга 6</p>
+                            <p>Услуга 7</p>
+                            <p>Услуга 8</p>
+                            <p>Услуга 9</p>
+                        </div>
+                        <div class="prise-second price-second-2">
+                            <p>Критерий 1</p>
+                            <p>Критерий 2</p>
+                            <p>Критерий 3</p>
+                        </div>
+                    </div>
+                    <div class="price-item price-item-3">
+                        <div class="price-first price-first-3">
+                            <p>Услуга 1</p>
+                            <p>Услуга 2</p>
+                            <p>Услуга 3</p>
+                            <p>Услуга 4</p>
+                            <p>Услуга 5</p>
+                            <p>Услуга 6</p>
+                            <p>Услуга 7</p>
+                        </div>
+                        <div class="prise-second price-second-3">
+                            <p>Критерий 1</p>
+                            <p>Критерий 2</p>
+                            <p>Критерий 3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-tag-1">
+                    <p><b>Базовый</b></p>
+                    <a href="#slider">Подробнее</a>
+                </div>
+                <div class="price-tag-2">
+                    <p><b>Максимальный</b></p>
+                    <a href="#slider">Подробнее</a>
+                </div>
+                <div class="price-tag-3">
+                    <p><b>Расширеный</b></p>
+                    <a href="#slider">Подробнее</a>
+                </div>
+            </section>
+        </main>
+        <footer class="container">
+            <h2><span class="purple">Связаться</span> с нами</h2>
+            <input class="visually-hidden" type="radio" id="social-1" name="toggle-2" checked>
+            <input class="visually-hidden" type="radio"  id="social-2" name="toggle-2">
+            <input class="visually-hidden" type="radio" id="social-3" name="toggle-2">
+            <input class="visually-hidden" type="radio" id="social-4" name="toggle-2">
+            <div class="flex social-controls">
+                <label class="item" for="social-1"></label>
+                <label class="item" for="social-2"></label>
+                <label class="item" for="social-3"></label>
+                <label class="item" for="social-4"></label>
+            </div>
+            <div class="social-list">
+                <div class="social-item">
+                    <p><a class="underline" href="tel:+79611515771">+7(961)151-57-71</a> Илья</p>
+                    <p><a class="underline" href="tel:+79117814736">+7(911)781-47-36</a> Дарья</p>
+                </div>
+                <div class="social-item">
+
+                </div>
+                <div class="social-item">
+
+                </div>
+                <div class="social-item">
+
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
