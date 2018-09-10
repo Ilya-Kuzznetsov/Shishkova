@@ -283,6 +283,7 @@ header .flex .item:nth-child(1) p:first-letter{
     background-position: 85% 50%;
     margin-top: 14px;
     margin-left: 67px;
+    margin-bottom: 13px;
     box-shadow: 0 0 10px 0px #666666;
     -webkit-transition: .3s all;
     -o-transition: .3s all;
@@ -906,15 +907,10 @@ footer .social-controls .item:nth-child(4){
     }
     
 }
-@media screen and (max-width:1140px){
-    .services .item{
-        /* flex-basis: 28%; */
-        /* flex-grow: 2; */
-    }
-}
 @media screen and (max-width:1108px){
-    .services .item:nth-child(2){
-        /* margin-right: 100px; */
+    .services{
+        width: 650px;
+        margin: 106px auto 0 auto;
     }
 }
 @media screen and (max-width:795px){
@@ -1040,18 +1036,23 @@ footer .social-controls .item:nth-child(4){
         text-align: center;
     }
 }
+@media screen and (max-width:650px){
+    .services{
+        width: 100%;
+    }
+}
 @media screen and (max-width:535px){
     .content-list form{
         margin: 38px auto 0 auto;
     }
 }
-@media screen and (max-width:320px){
-    .slider form{
-        margin-left: -25px;
-    }
-}
 @media screen and (max-width:425px){
     .what-we-do{
         width: 95%;
+    }
+}
+@media screen and (max-width:320px){
+    .slider form{
+        margin-left: -25px;
     }
 }
