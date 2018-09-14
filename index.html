@@ -5,12 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>shishkova</title>
         <link rel="stylesheet" href="css/normolize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" href="img/icon.png">
         <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
         <script src="js/main.js"></script>
     </head>
-    <body>
+    <body id="start">
+        <div class="fix container">
         <header class="container">
             <ul class="flex">
                 <li class="item">
@@ -34,12 +35,15 @@
                 </li>
             </ul>
         </header>
+        </div>
         <main>
-            <section class="slider" id="slider">
+            <a class="up" href="#start">В начало</a>
+            <a class="down" href="#contact">Связаться</a>
+            <section class="slider">
                 <div class="container content-list">
                 <h2><span class="purple">Заголовок</span> слайдера</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fuga provident. Libero magni quibusdam labore ad iste saepe hic, maxime qui ipsum tempore beatae, volu tomi ptates doloremque rerum aspernatur dolorum at!</p>
-                <form class="flex" method="get" action="http://echo.htmlacademy.ru">
+                <p id="slider">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fuga provident. Libero magni quibusdam labore ad iste saepe hic, maxime qui ipsum tempore beatae, volu tomi ptates doloremque rerum aspernatur dolorum at!</p>
+                <form class="flex" method="POST" action="http://echo.htmlacademy.ru">
                     <p><span class="purple">Отправить</span> сообщение</p>
                     <label class="visually-hidden" for="name">Имя</label>
                     <input name="name" id="name" type="text" placeholder="Ваше Имя" pattern="[А-Яа-яЁё]{2,20}" required>
@@ -58,16 +62,16 @@
                 <p>Основные направления, которые мы предлагаем в работе с нашими клиентами</p>
                     <ul class="flex services">
                         <li class="item">
-                            <h3>Создание визуальной части</h3>
-                            <p>Оригинальный<br> и уникальный контент</p>
+                            <h3>Визуалньнй контент</h3>
+                            <p>Создание уникальной визуальной составляющей</p>
                         </li>
                         <li class="item">
                             <h3>Копирайтинг</h3>
-                            <p>Написание статей под Ваш зпрос</p>
+                            <p>Написание уникальных текстов презентационного и рекламного характера</p>
                         </li>
                         <li class="item">
                             <h3>Создание SMM стратегии</h3>
-                            <p>Расписаный план работы с Вашим ресурсом</p>
+                            <p>Разработанынй план работы с Вашим ресурсом</p>
                         </li>
                         <li class="item">
                             <h3>Таргетированная реклама</h3>
@@ -87,17 +91,17 @@
                             <label class="item" for="radio-smm-1"></label>
                             <label class="item" for="radio-smm-2"></label>
                             <label class="item" for="radio-smm-3"></label>
-                            <label class="item" for="radio-smm-4"></label>
+                            <!-- <label class="item" for="radio-smm-4"></label> -->
                         </div>
                         <div class="slider-list">
                             <div class="smm-text first-text">
-                                <h3>Что такое SMM текст?</h3>
-                                <p>SMM это аббревиатура, с англ. переводится как социальный медиа маркетинг, соответственно текст который пишется в рамках SMM ориентирован на аудиторию соц. сетей, твиттеров, блогов, форумов и прочих социальных площадок. В моем случае это была соц. сеть Вконтакте. Но поскольку основная цель всех манипуляций — привлечь трафик из соц. сетей на сайт заказчика, то сам текст изначально копирайтерами пишется для сайта и потом из него лепят пост для ВК. Тут можно вспомнить еще одну заумную аббревиатуру — SMM.</p>
+                                <h3>Что такое SMM?</h3>
+                                <p>SMM (Social Media Marketing) - процесс привлечения внимания через социальные платформы. Это комплекс мероприятий по использованию социальных сетей в качестве каналов для продвижения компании, создания и поддержания имиджа бренда.</p>
                                 <img src="img/apple.png" alt="apple watch">
                             </div>
                             <div class="smm-text second-text">
-                                <h3>Что писать?</h3>
-                                <p>Расскажите, зачем мы пишем посты в группу/на страницу? «Чтобы было»? Примеров масса, удачных нет. Для продаж? Вряд ли. SMM бренда – это почти всегда контент-маркетинг, а не прямые продажи. Для лояльности? Да, то, что нужно. Вспоминаем любителя фиолетовых коров Сэта Година и его доверительный маркетинг. Войдите в дом клиента, поселитесь у него, будьте с ним везде, где он откроет Facebook.</p>
+                                <h3>Особенности SMM</h3>
+                                <p>Важно понимать, что SMM не является открытой рекламой. Речь идет о создании имиджа бренда и предоставлении качественного контента, располагающего аудиторию к Вашему предложению. При продвижении важна неформальная, доверительная атмосфера - так люди лучше воспримут продвигаемые продукты и услуги, а имидж бренда повысится.</p>
                                 <img src="img/apple.png" alt="apple watch">
                             </div>
                                 <div class="smm-text third-text">
@@ -115,7 +119,7 @@
                     </div>  
                 </div>
             </section>
-            <!-- <section class="price container" id="price">
+            <section class="price container" id="price">
                 <h2><span class="purple">Стоимость</span> услуг</h2>
                 <div class="flex price-list">
                     <div class="price-item price-item-1">
@@ -125,6 +129,10 @@
                             <p>Услуга 3</p>
                             <p>Услуга 4</p>
                             <p>Услуга 5</p>
+                            <div class="price-tag-1">
+                                <p><b>Базовый</b></p>
+                                <a href="#slider">Подробнее</a>
+                            </div>
                         </div>
                         <div class="prise-second price-second-1">
                             <p>Критерий 1</p>
@@ -141,8 +149,10 @@
                             <p>Услуга 5</p>
                             <p>Услуга 6</p>
                             <p>Услуга 7</p>
-                            <p>Услуга 8</p>
-                            <p>Услуга 9</p>
+                            <div class="price-tag-3">
+                                <p><b>Расширеный</b></p>
+                                <a href="#slider">Подробнее</a>
+                            </div>
                         </div>
                         <div class="prise-second price-second-2">
                             <p>Критерий 1</p>
@@ -159,6 +169,12 @@
                             <p>Услуга 5</p>
                             <p>Услуга 6</p>
                             <p>Услуга 7</p>
+                            <p>Услуга 8</p>
+                            <p>Услуга 9</p>
+                            <div class="price-tag-2">
+                                <p><b>Максимальный</b></p>
+                                <a href="#slider">Подробнее</a>
+                            </div>
                         </div>
                         <div class="prise-second price-second-3">
                             <p>Критерий 1</p>
@@ -167,7 +183,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="price-tag-1">
+                <!-- <div class="price-tag-1">
                     <p><b>Базовый</b></p>
                     <a href="#slider">Подробнее</a>
                 </div>
@@ -178,21 +194,15 @@
                 <div class="price-tag-3">
                     <p><b>Расширеный</b></p>
                     <a href="#slider">Подробнее</a>
-                </div>
-            </section> -->
+                </div> -->
+            </section>
         </main>
-        <!-- <footer class="container" id="contact">
+        <footer class="container main-footer" id="contact">
             <h2><span class="purple">Связаться</span> с нами</h2>
             <input class="visually-hidden" type="radio" id="social-1" name="toggle-2" checked>
             <input class="visually-hidden" type="radio"  id="social-2" name="toggle-2">
             <input class="visually-hidden" type="radio" id="social-3" name="toggle-2">
             <input class="visually-hidden" type="radio" id="social-4" name="toggle-2">
-            <div class="flex social-controls">
-                <label class="item" for="social-1"></label>
-                <label class="item" for="social-2"></label>
-                <label class="item" for="social-3"></label>
-                <label class="item" for="social-4"></label>
-            </div>
             <div class="social-list">
                 <div class="social-item">
                     <p><a class="underline" href="tel:+79611515771">+7(961)151-57-71</a> Илья</p>
@@ -211,6 +221,12 @@
                     <a href="https://www.instagram.com/shiishkova/" target="_blank">shiishkova</a>
                 </div>
             </div>
-        </footer> -->
+            <div class="flex social-controls">
+                <label class="item" for="social-1"></label>
+                <label class="item" for="social-2"></label>
+                <label class="item" for="social-3"></label>
+                <label class="item" for="social-4"></label>
+            </div>
+        </footer>
     </body>
 </html>
