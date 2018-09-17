@@ -106,6 +106,7 @@ header .flex .item:nth-child(1) p:first-letter{
 
 
 
+
 .wrapper{
     display: block;
     background-color: #cccccc;
@@ -242,7 +243,7 @@ header .flex .item:nth-child(1) p:first-letter{
 }
 .slider form{
     width: 372px;
-    height: 388px;
+    height: 458px;
     flex-direction: column;
     background-color: #ffffff;
     margin-top: 38px;
@@ -293,7 +294,7 @@ header .flex .item:nth-child(1) p:first-letter{
     background-image: url(../img/arrow.svg);
     background-repeat: no-repeat;
     background-position: 85% 50%;
-    margin-top: 14px;
+    margin-top: 21px;
     margin-left: 67px;
     margin-bottom: 13px;
     box-shadow: 0 0 10px 0px #666666;
@@ -431,7 +432,7 @@ header .flex .item:nth-child(1) p:first-letter{
 }
 .smm-for-brand .smm-text{
     display: none;
-    max-width: 505px;
+    /* max-width: 505px; */
     width: fit-content;
 }
 .slider-list{
@@ -458,11 +459,25 @@ header .flex .item:nth-child(1) p:first-letter{
     color: #666666;
     max-width: 505px;
     width: fit-content;
+    height: 244px;
     margin-top: 16px;
     line-height: 27px;
     padding-left: 10px;
     padding-right: 10px;
     /* padding-right: 70px; */
+}
+.first-text img{
+    width: 100%;
+}
+.second-text img{
+    position: relative;
+    top: -47px;
+    width: 72%;
+}
+.third-text img{
+    width: 100%;
+    position: relative;
+    top: -90px;
 }
 .slider-list .smm-text:nth-child(1) img{
     /* position: relative; */
@@ -492,7 +507,7 @@ header .flex .item:nth-child(1) p:first-letter{
 .slider-list a{
     position: relative;
     display: block;
-    margin-top: -6px;
+    /* margin-top: -6px; */
     margin-left: 6px;
     height: 41px;
     width: 240px;
@@ -543,19 +558,19 @@ header .flex .item:nth-child(1) p:first-letter{
     transition: .3s all;
 }
 .smm-category .controls .item:nth-child(1){
-    background-image: url(../img/smm-1.png);
+    background-image: url(../img/info.svg);
     background-repeat: no-repeat;
-    background-position: 71% 78%;
+    background-position: 49% 52%;
 }
 .smm-category .controls .item:nth-child(2){
-    background-image: url(../img/smm-2.png);
+    background-image: url(../img/light.svg);
     background-repeat: no-repeat;
-    background-position: 101% 214%;
+    background-position: 49% 53%;
 }
 .smm-category .controls .item:nth-child(3){
-    background-image: url(../img/smm-3.png);
+    background-image: url(../img/atention.svg);
     background-repeat: no-repeat;
-    background-position: 98% 82%;
+    background-position: 53% 44%;
 }
 .smm-category .controls .item:nth-child(4){
     background-image: url(../img/smm-4.png);
@@ -564,12 +579,15 @@ header .flex .item:nth-child(1) p:first-letter{
 }
 #radio-smm-1:checked ~ .slider-list .smm-text:nth-child(1){
     display: block;
+    max-height: 300px;
 }
 #radio-smm-2:checked ~ .slider-list .smm-text:nth-child(2){
     display: block;
+    max-height: 300px;
 }
 #radio-smm-3:checked ~ .slider-list .smm-text:nth-child(3){
     display: block;
+    max-height: 330px;
 }
 #radio-smm-4:checked ~ .slider-list .smm-text:nth-child(4){
     display: block;
@@ -874,6 +892,17 @@ main .down{
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 61%;
+}
+.slider .flex .agreement{
+    font-size: 9px;
+    line-height: 10px;
+    display: block;
+    width: 340px;
+    margin-top: 15px;
+}
+.agreement-link{
+    text-decoration: underline;
+    color: blue;
 }
 @media screen and (max-width:1190px){
     .container{

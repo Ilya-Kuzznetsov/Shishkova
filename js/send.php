@@ -4,9 +4,12 @@ if(isset($_POST['submit'])){
     $to = "ilya-kuzznetsov@yandex.ru"; // Здесь нужно написать e-mail, куда будут приходить письма
     $from = "no-reply@epicblog.net"; // Здесь нужно написать e-mail, от кого будут приходить письма, например no-reply@epicblog.net
     $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $message = $_POST['message'];
     $subject = "Форма отправки сообщений с сайта";
     $subject2 = "Copy of your form submission";
-    $message = "ФИО посетителя: ". $name . " | Адрес электронной почты: "  . $_POST['email'] . " | Комментарий: " . $_POST['message'];
+    $message = "ФИО посетителя: ". $name . " | Адрес электронной почты: "  . $_POST['email'] . " | Комментарий: " . $_POST['message'] . " | Номер телефона: " . $_POST['phone'];
     $message2 = "Here is a copy of your message " . $name . "\n\n" . $_POST['message'];
 
     $headers = "From:" . $from;
