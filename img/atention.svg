@@ -35,7 +35,7 @@
       }
     </style>
     <filter id="filter" x="414" y="1188" width="54" height="47" filterUnits="userSpaceOnUse">
-      <feFlood result="flood" flood-color="#90f"/>
+      <feFlood result="flood" flood-color="#f93"/>
       <feComposite result="composite" operator="in" in2="SourceGraphic"/>
       <feBlend result="blend" in2="SourceGraphic"/>
     </filter>

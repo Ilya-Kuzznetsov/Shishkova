@@ -18,13 +18,13 @@ if(isset($_POST['submit'])){
     mail($to,$subject,$message,$headers);
    // mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender - Отключено!
     echo "Сообщение отправлено. Спасибо Вам " . $name . ", мы скоро свяжемся с Вами.";
-	echo "<br /><br /><a href='https://epicblog.net'>Вернуться на сайт.</a>";
+	echo "<br /><br /><a href='http://shiishkova.ru'>Вернуться на сайт.</a>";
 
 }
 
 ?>
 <!--Переадресация на главную страницу сайта, через 3 секунды-->
 <script language="JavaScript" type="text/javascript">
-function changeurl(){eval(self.location="https://shishkova.000webhostapp.com");}
+function changeurl(){eval(self.location="http://shiishkova.ru");}
 window.setTimeout("changeurl();",3000);
 </script>
